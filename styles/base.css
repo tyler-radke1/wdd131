@@ -1,0 +1,102 @@
+
+    /* Reset some default spacing */
+    body, h1, h2, p, nav, footer, section {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Body style */
+    body {
+      line-height: 1.5;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header title */
+    #course-title {
+      display: block;
+      background-color: #0077cc; /* Blue */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    /* Navigation bar */
+    nav {
+      background-color: #333; /* Charcoal black */
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    /* Card sections */
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .card h2 {
+      background-color: #0077cc; /* Blue header bar */
+      color: white;
+      padding: 10px 15px;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      padding: 15px;
+    }
+
+    /* About Me layout: image right */
+    .card img {
+      float: right;
+      margin: 15px;
+      max-width: 40%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    /* Dr. Pepper section: image left */
+    .card:nth-of-type(2) img {
+      float: left;
+    }
+
+    /* Clear floats after card content */
+    .card::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0077cc; /* Same blue as headers */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
